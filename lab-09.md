@@ -54,7 +54,7 @@ to answer they probably answer “mostly good”.
 
 ``` r
 evals %>%
-  ggplot(aes(x = bty_avg , y = score)) +
+  ggplot(aes(x = bty_avg, y= score)) +
   geom_point()
 ```
 
@@ -70,7 +70,7 @@ Looking at it like this, I don’t see any real relationship.
 
 ``` r
 evals %>%
-  ggplot(aes(x= bty_avg , y= score)) +
+  ggplot(aes(x=bty_avg, y= score)) +
   geom_point() +
   geom_jitter()
 ```
@@ -138,7 +138,7 @@ score = 3.88 + bty\_avg\*.067
 
 ``` r
 evals %>%
-  ggplot(aes(x= bty_avg , y= score)) +
+  ggplot(aes(x= bty_avg, y= score)) +
   geom_point() +
   geom_jitter() +
   geom_smooth( method= lm, se= FALSE, color = "orange")
